@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TugasKrplCuakz</title>
+    <style>
+    body {
+        background-color: rgba(210, 243, 208, 0.438);
+      
+          height: 20px;
+      }
+      
+      .Judul {
+          color: rgb(2, 2, 2);
+          display: flex;
+          justify-content: center;
+          border-radius: 10px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      .Judul h1{
+          border:  3px solid black;
+          background-color:rgba(243, 210, 210, 0.601);
+          padding: 10px;
+          border-radius: 10px;
+      }
+      
+      .textbergerak {
+          background-color: rgba(244, 211, 211, 0.601);
+          color: rgb(0, 0, 0);
+          border-radius: 10px;
+          border: 3px solid black;
+      }
+      
+      .JADWALPELAJARAN {
+          color: rgb(0, 0, 0);
+          font-size: large;
+      }
+      
+      .tombol {
+          background-color: aliceblue;
+          font-size: medium;
+      }
+      
+      button {
+          margin-top: 50px;
+          margin-left: 685px;
+          padding: 10px 10px;
+          border-radius: 10px;
+          font-size: medium;
+      }
+      
+      .DAFTARJADWAL {
+          align-items: center;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          background-color: rgba(255, 255, 255, 0.601);
+      }
+      
+      .DAFTARSISWA h2{
+          border: 3px solid black;
+          background-color: aliceblue;
+          border-radius: 10px;
+          padding: 7px;
+          width: 300px;
+          background-color: 255, 255, 255, 0.601;
+      }
+      
+      .tabelsiswa div{
+          border: 3px solid black;
+          display: inline-block;
+          width: 250px;
+          font-size: large;
+          margin-left: 20px;
+          padding-left: 20px;
+          background-color: rgba(255, 255, 255, 0.601);
+          border-radius: 20px;
+          text-align: left;
+      }
+      
+      .tabelpiket div{
+          border: 3px solid black;
+          display: inline-block;
+          width: 250px;
+          color: black;
+          font-size: large;
+          margin-left: 20px;
+          padding-left: 20px;
+          background-color: rgba(255, 255, 255, 0.601);
+          border-radius: 20px;
+          text-align: left;
+      }
+      
+      .JADWALPIKET h2{
+          border: 3px solid black;
+          background-color: aliceblue;
+          border-radius: 10px;
+          padding: 7px;
+          width: 300px;
+      }
+      
+      #videoku { 
+          color: rgb(19, 17, 17);
+          margin-top: 200px;
+          width: 95%;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 10px; 
+          text-align: center;
+      }
+      
+      .video {
+          display: inline-block;
+          border: 3px solid rgb(1, 1, 1);
+          padding: 5px;
+          height: 295px;
+          background-color: rgb(248, 248, 248);
+      }
+      
+      .video h3 {
+          border:  3px solid black;
+          background-color:rgba(255, 255, 255, 0.601);
+          padding: 10px;
+          border-radius: 10px;
+      }
+      
+      .vidlebaran h2 {
+          border: 3px solid black;
+          padding: 10px;
+          border-radius: 10px;
+          background-color: aliceblue;
+          width: 400px;
+      }
+      
+      #fotoku {
+          color: rgb(19, 17, 17);
+          margin-top: 200px;
+          width: 95%;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 10px; 
+          text-align: center;
+          padding: 10px;
+      }
+      
+      .foto {
+          display: inline-block;
+          border: 3px solid rgb(1, 1, 1);
+          padding: 5px;
+          height: 283px;
+          background-color: rgb(248, 248, 248);
+      }
+      
+      .foto h3 {
+          border:  3px solid black;
+          background-color:rgba(255, 255, 255, 0.601);
+          padding: 10px;
+          border-radius: 10px;
+      }
+      .fotolebaran h2 {
+          border: 3px solid black;
+          padding: 10px;
+          border-radius: 10px;
+          background-color: aliceblue;
+          width: 400px;
+      }
+      
+      /*pengaturan laptop*/
+      @media screen and (max-width:1024px) {
+      
+        body {
+          background-color: rgba(210, 243, 208, 0.438);
+        }
+      
+        audio {
+          margin-left: 55px;
+        }
+      
+        button {
+          margin-top: 50px;
+          margin-left: 450px;
+          padding: 10px 10px;
+          border-radius: 10px;
+        }
+      
+        .DAFTARSISWA h2{
+          border: 3px solid black;
+          background-color: aliceblue;
+          border-radius: 10px;
+          padding: 7px;
+          width: 300px;
+          background-color: 255, 255, 255, 0.601;
+          margin-left: 45px;
+        }
+      
+        #siswa {
+          display: inline-block;
+          justify-content: center;
+          margin-left: 1px;
+         }
+      
+      
+         .tabelsiswa div{
+           border: 3px solid black;
+           display: inline-block;
+           width: 240px;
+           height: 200px;
+           font-size: large;
+           padding-left: 10px;
+           background-color: rgba(255, 255, 255, 0.601);
+           border-radius: 20px;
+           margin-bottom: 25px;
+         }
+      
+         .JADWALPIKET h2{
+          border: 3px solid black;
+          background-color: aliceblue;
+          border-radius: 10px;
+          padding: 7px;
+          width: 300px;
+          margin-left: 45px;
+         }
+      
+         #piket {
+          display: inline-block;
+          justify-content: center;
+          margin-left: 1px;
+         }
+      
+         .tabelpiket div{
+          border: 3px solid black;
+          display: inline-block;
+          width: 242px;
+          height: 220px;
+          font-size: large;
+          padding-left: 10px;
+          background-color: rgba(255, 255, 255, 0.601);
+          border-radius: 20px;
+          margin-bottom: 25px;
+         }
+      
+         .vidlebaran h2 {
+          border: 3px solid black;
+          padding: 10px;
+          border-radius: 10px;
+          background-color: aliceblue;
+          width: 400px;
+          margin-left: 70px;
+        }
+      
+        .video h3 {
+          border:  3px solid black;
+          background-color:rgba(255, 255, 255, 0.601);
+          padding: 10px;
+          border-radius: 10px;
+        }
+      
+        #videoku { 
+          color: rgb(19, 17, 17);
+          margin-top: 200px;
+          width: 95%;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 10px; 
+          text-align: center;
+        }
+      
+        .video {
+          display: inline-block;
+          border: 3px solid rgb(1, 1, 1);
+          padding: 5px;
+          height: 295px;
+          background-color: rgb(248, 248, 248);
+          margin-left: 67px;
+          margin-bottom: 100px;
+        }
+      
+        #fotoku {
+          color: rgb(19, 17, 17);
+          margin-top: 200px;
+          width: 95%;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 10px; 
+          text-align: center;
+          padding: 10px;
+        }
+      
+        .foto {
+          display: inline-block;
+          border: 3px solid rgb(1, 1, 1);
+          padding: 5px;
+          height: 283px;
+          background-color: rgb(248, 248, 248);
+          margin-left: 67px;
+          margin-bottom: 100px;
+        }
+      
+        .foto h3 {
+          border:  3px solid black;
+          background-color:rgba(255, 255, 255, 0.601);
+          padding: 10px;
+          border-radius: 10px;
+      
+        }
+      
+        .fotolebaran h2 {
+          border: 3px solid black;
+          padding: 10px;
+          border-radius: 10px;
+          background-color: aliceblue;
+          width: 400px;
+          margin-left: 70px;
+        }
+      }
+      /*pengaturan tablet*/
+      @media screen and (min-width:660px) and (max-width:768px) {
+      
+          body {
+              background-size: cover;
+              background: rgba(210, 243, 208, 0.438);
+          }
+         .Judul {
+           color: rgb(2, 2, 2);
+           display: flex;
+           justify-content: center;
+           border-radius: 10px;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+         }
+         
+         .Judul h1{
+           border:  3px solid black;
+           background-color:rgba(255, 255, 255, 0.601);
+           padding: 8px;
+           border-radius: 10px;
+           margin-left: 190px;
+         }
+      
+         .textbergerak {
+           background-color: rgba(255, 255, 255, 0.601);
+           color: rgb(0, 0, 0);
+           border-radius: 10px;
+           border: 3px solid black;
+           font-size: medium;
+           min-width: 910px;
+         }
+      
+         audio {
+          margin-left: 180px;
+         }
+      
+         button {
+           margin-top: 50px;
+           margin-left: 390px;
+           padding: 10px 10px;
+           border-radius: 10px;
+           font-size: medium;
+         }
+      
+         .DAFTARSISWA h2{
+           border: 3px solid black;
+           background-color: aliceblue;
+          border-radius: 10px;
+           padding: 7px;
+           width: 300px;
+           background-color: 255, 255, 255, 0.601;
+           margin-left: 160px;
+         }
+      
+         #siswa {
+          display: inline-block;
+          justify-content: center;
+          margin-left: 150px;
+         }
+      
+      
+         .tabelsiswa div{
+           border: 3px solid black;
+           display: inline-block;
+           width: 250px;
+           height: 200px;
+           font-size: large;
+           padding-left: 10px;
+           background-color: rgba(255, 255, 255, 0.601);
+           border-radius: 20px;
+           margin-bottom: 10px;
+         }
+      
+         .JADWALPIKET h2{
+          border: 3px solid black;
+          background-color: aliceblue;
+          border-radius: 10px;
+          padding: 7px;
+          width: 300px;
+          margin-left: 160px;
+         }
+      
+         #piket {
+          display: inline-block;
+          justify-content: center;
+          margin-left: 150px;
+         }
+      
+         .tabelpiket div{
+          border: 3px solid black;
+          display: inline-block;
+          width: 250px;
+          height: 220px;
+          font-size: large;
+          padding-left: 10px;
+          background-color: rgba(255, 255, 255, 0.601);
+          border-radius: 20px;
+          margin-bottom: 25px;
+         }
+      
+         .vidlebaran h2 {
+           border: 3px solid black;
+           padding: 10px;
+           border-radius: 10px;
+           background-color: aliceblue;
+           width: 400px;
+           margin-left: 200px;
+         }
+      
+         .video h3 {
+           border:  3px solid black;
+           background-color:rgba(255, 255, 255, 0.601);
+           padding: 10px;
+           border-radius: 10px;
+         }
+      
+         #videoku { 
+           color: rgb(19, 17, 17);
+           margin-top: 200px;
+           width: 95%;
+           height: auto;
+           margin-left: auto;
+           margin-right: auto;
+           border-radius: 10px; 
+           text-align: center;
+         }
+      
+         .video {
+           display: inline-block;
+           border: 3px solid rgb(1, 1, 1);
+           padding: 5px;
+           height: 295px;
+           background-color: rgb(248, 248, 248);
+           margin-left: 185px;
+           margin-bottom: 100px;
+         }
+      
+         #fotoku {
+           color: rgb(19, 17, 17);
+           margin-top: 200px;
+           width: 95%;
+           height: auto;
+           margin-left: auto;
+           margin-right: auto;
+           border-radius: 10px; 
+           text-align: center;
+           padding: 10px;
+         }
+      
+         .foto {
+           display: inline-block;
+           border: 3px solid rgb(1, 1, 1);
+           padding: 5px;
+           height: 283px;
+           background-color: rgb(248, 248, 248);
+           margin-left: 185px;
+           margin-bottom: 100px;
+         }
+      
+         .foto h3 {
+           border:  3px solid black;
+           background-color:rgba(255, 255, 255, 0.601);
+           padding: 10px;
+           border-radius: 10px;
+      
+         }
+      
+         .fotolebaran h2 {
+           border: 3px solid black;
+           padding: 10px;
+           border-radius: 10px;
+           background-color: aliceblue;
+           width: 400px;
+           margin-left: 200px;
+         }
+      
+      }
+      /*pengaturan hp*/
+      @media screen and (max-width:767px) {
+        body {
+          background-color: rgba(210, 243, 208, 0.438);
+        }
+        
+        .Judul {
+          color: rgb(2, 2, 2);
+          border-radius: 10px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          width: 235%;
+        }
+      
+        .textbergerak {
+          background-color: rgba(255, 255, 255, 0.601);
+          color: rgb(0, 0, 0);
+          border-radius: 10px;
+          border: 3px solid black;
+          font-size: x-large;
+          min-width: 950px;
+          height: 450%;
+        }
+      
+        audio {
+          margin-left: 340px;
+        }
+      
+        button {
+          margin-top: 50px;
+          margin-left: 420px;
+          padding: 10px 10px;
+          border-radius: 10px;
+          width: 150px;
+          font-size: larger;
+        }
+      
+        .DAFTARJADWAL {
+          align-items: center;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          background-color: rgba(255, 255, 255, 0.601);
+          margin-left: 25px;
+        }
+      
+        .DAFTARSISWA h2{
+          border: 3px solid black;
+          background-color: aliceblue;
+          border-radius: 10px;
+          padding: 10px;
+          width: 300px;
+          background-color: 255, 255, 255, 0.601;
+          margin-left: 335px;
+        }
+      
+        #siswa {
+         display: inline-block;
+         justify-content: center;
+         margin-left: 320px;
+        }
+      
+      
+        .tabelsiswa div{
+          border: 3px solid black;
+          display: inline-block;
+          width: 300px;
+          height: 250px;
+          font-size: x-large;
+          padding-left: 10px;
+          background-color: rgba(255, 255, 255, 0.601);
+          border-radius: 20px;
+          margin-bottom: 10px;
+        }
+      
+        .JADWALPIKET h2{
+         border: 3px solid black;
+         background-color: aliceblue;
+         border-radius: 10px;
+         padding: 7px;
+         width: 300px;
+         margin-left: 335px;
+        }
+      
+        #piket {
+         display: inline-block;
+         justify-content: center;
+         margin-left: 320px;
+        }
+      
+        .tabelpiket div{
+         border: 3px solid black;
+         display: inline-block;
+         width: 300px;
+         height: 315px;
+         font-size: x-large;
+         padding-left: 10px;
+         background-color: rgba(255, 255, 255, 0.601);
+         border-radius: 20px;
+         margin-bottom: 25px;
+        }
+      
+        .vidlebaran h2 {
+          border: 3px solid black;
+          padding: 10px;
+          border-radius: 10px;
+          background-color: aliceblue;
+          width: 400px;
+          margin-left: 273px;
+        }
+      
+        .video h3 {
+          border:  3px solid black;
+          background-color:rgba(255, 255, 255, 0.601);
+          padding: 10px;
+          border-radius: 10px;
+        }
+      
+        #videoku { 
+          color: rgb(19, 17, 17);
+          margin-top: 200px;
+          width: 95%;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 10px; 
+          text-align: center;
+        }
+      
+        .video {
+          display: inline-block;
+          border: 3px solid rgb(1, 1, 1);
+          padding: 5px;
+          height: 295px;
+          background-color: rgb(248, 248, 248);
+          margin-left: 220px;
+          margin-bottom: 100px;
+        }
+      
+        #fotoku {
+          color: rgb(19, 17, 17);
+          margin-top: 200px;
+          width: 95%;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 10px; 
+          text-align: center;
+          padding: 10px;
+        }
+      
+        .foto {
+          display: inline-block;
+          border: 3px solid rgb(1, 1, 1);
+          padding: 5px;
+          height: 283px;
+          background-color: rgb(248, 248, 248);
+          margin-left: 220px;
+          margin-bottom: 100px;
+        }
+      
+        .foto h3 {
+          border:  3px solid black;
+          background-color:rgba(255, 255, 255, 0.601);
+          padding: 10px;
+          border-radius: 10px;
+      
+        }
+      
+        .fotolebaran h2 {
+          border: 3px solid black;
+          padding: 10px;
+          border-radius: 10px;
+          background-color: aliceblue;
+          width: 400px;
+          margin-left: 273px;
+        }
+      }
+      </style>
+</head>
+<body>
+
+    <div class="Judul">
+        <h1>KEGIATAN CHUAKZ KUAT</h1>
+    </div>
+        <br>
+    <div class="textbergerak"><marquee behavior="alternate" scrollamount="9"><h3>Chuakz Pintar | Chuakz Rajin | Chuakz Baik</h3></marquee></div>
+        <br>
+        <br>
+    <center>
+    <audio controls>
+        <source src="lagu.mp3" type="audio/mp3">
+    </audio>
+    </center>
+    <div class="JADWALPELAJARAN">
+        <button class="tombol" id="scrollButton"><b>Jadwal Pelajaran</b></button>
+        <br>
+        <br>
+        <div class="DAFTARJADWAL" id="table1" style="display: none;">
+        <table  border="7" cellspacing="1" cellpadding="30">
+            <tr>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            </tr>
+
+            <tr>
+                <th>SENIN</th>
+                <td colspan="6">KRPL</td>
+                <td colspan="1">BJW</td>
+                <td colspan="3">BIN</td>
+            </tr>
+
+            <TR>
+                <th>SELASA</th>
+                <td colspan="6">KRPL</td>
+                <td colspan="4">RBT</td>
+            </TR>
+
+            <tr>
+                <th>RABU</th>
+                <td colspan="2">SJR</td>
+                <td colspan="4">BNG</td>
+                <td colspan="2">POR</td>
+                <td colspan="2">PPS</td>
+            </tr>
+
+            <tr>
+                <th>KAMIS</th>
+                <td colspan="6">KRPL</td>
+                <td colspan="3">MTK</td>
+                <td colspan="">BJW</td>
+            </tr>
+            
+            <tr>
+                <th>JUMAT</th>
+                <td colspan="3">PAG</td>
+                <td colspan="5">PKK</td>
+                <td colspan="2">---</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+    <br>
+    <br>
+    <center>
+    <div class="DAFTARSISWA">
+        <center><h2 style="text-align: center;">DAFTAR SISWA</h2></center>
+        <br/>
+        <div id="siswa" class="tabelsiswa">
+            <div class="card1">
+                <ul type="circle">
+                    <li>Adinda Ayudya Lestari</li>
+                    <li>Afriansyah Yogatama</li>
+                    <li>Amiruddin Aziz</li>
+                    <li>Andhika Hisyam M.R</li>
+                    <li>Anindya Wulandari</li>
+                    <li>Ata Al Almer</li>
+                    <li>Ayudhya Naja Adinda</li>
+                </ul>
+            </div>
+            
+            <div class="card2">
+                <ul type="circle">
+                    <li>Daniswara Zavier P.A</li>
+                    <li>Dirada Alif Saindeva</li>
+                    <li>Ghania Aqeela Ara K</li>
+                    <li>Helga Olivia</li>
+                    <li>JHESAYA GIOVANI A</li>
+                    <li>Leonard Alfareno</li>
+                    <li>Luky Pasya Y</li>
+                </ul>
+            </div>
+
+            <div class="card3">
+                <ul type="circle">
+                    <li>Maulid Marizka A.A</li>
+                    <li>Muhammad Yahya A</li>
+                    <li>Nabil Yamashita</li>
+                    <li>Nadhifa Salma A</li>
+                    <li>Najib Ghani Widodo</li>
+                    <li>Najwa Vania P</li>
+                    <li>Nayla Rizka M</li>
+                </ul>
+            </div>
+
+            <div class="card4">
+                <ul type="circle">
+                    <li><b>Raditya febryandaru M</b></li>
+                    <li>Rafa Akmal Widjaya</li>
+                    <li>Rayhan Adesta A.P</li>
+                    <li>Ridho Hafid Pratama</li>
+                    <li>Rizal Ahmad F.T</li>
+                    <li>Sabrina Aisya</li>
+                    <li>Satura Izhato R</li>
+                </ul>
+            </div>
+
+            <div class="card5">
+                <ul type="circle">
+                    <li>Seanirma Aida C</li>
+                    <li>Umar Hafidz</li>
+                    <li>Vania Kumala A</li>
+                    <li>Wahyu Aji S.N</li>
+                    <li>Wildan Al Azhar</li>
+                    <li>Yuhair Irsyad</li>
+                    <li>Zachdan Zarga D</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </center>
+    <br>
+    <br>
+    <br>
+    <center>
+    <div class="JADWALPIKET">
+         <center><h2 style="text-align: center;">JADWAL PIKET</h2></center>
+        <div id="piket" class="tabelpiket">
+        <div class="cardpiket1">
+            <h3>SENIN</h3>
+            <ol>
+                <li>Yahya</li>
+                <li>Ara</li>
+                <li>Aziz</li>
+                <li>Danis</li>
+                <li>Dinda</li>
+                <li>Dirada</li>
+                <li>Leonard</li>
+            </ol>
+        </div>
+
+          <div class="cardpiket2">
+            <h3>SELASA</h3>
+            <ol>
+                <li>Wildan</li>
+                <li>Aji</li>
+                <li>Radit</li>
+                <li>Rayhan</li>
+                <li>Naja</li>
+                <li>Vania</li>
+                <li>Rizka</li>
+            </ol>
+        </div>
+
+        <div class="cardpiket3">
+            <h3>RABU</h3>
+            <ol>
+                <li>Satura</li>
+                <li>Umar</li>
+                <li>Sean</li>
+                <li>Nabil</li>
+                <li>Nayla</li>
+                <li>Nadhifa</li>
+                <li>Sabrina</li>
+            </ol>
+        </div>
+
+        <div class="cardpiket4">
+            <h3>KAMIS</h3>
+            <ol>
+                <li>Satura</li>
+                <li>Umar</li>
+                <li>Sean</li>
+                <li>Nabil</li>
+                <li>Nayla</li>
+                <li>Nadhifa</li>
+                <li>Sabrina</li>
+            </ol>
+        </div>
+
+        <div class="cardpiket5">
+            <h3>JUMAT</h3>
+            <ol>
+                <li>Zachdan</li>
+                <li><b>JEJE</b></li>
+                <li>Pasya</li>
+                <li>Helga</li>
+                <li>Anin</li>
+                <li>Irsyad</li>
+                <li>Ridho</li>
+            </ol>
+        </div>
+        </div>
+    </div>
+    </center>
+    <div id="videoku" class="vidlebaran">
+        <center><h2>VIDEO LEBARAN</h2></center>
+        <br>
+        <div class="video">
+            <video controls src="vid1.mp4" width="520" height="292"></video>
+            <h3>Video 1</h3>
+        </div>
+        <div class="video">
+            <video controls src="vid2.mp4" width="520" height="=280"></video>
+            <h3>Video 2</h3>
+        </div>
+    </div>
+
+    <div id="fotoku" class="fotolebaran">
+        <center><h2>FOTO</h2></center>
+        <div class="foto">
+            <img src="pict1.jpg" width="520" height="280">
+            <h3>Foto 1</h3>
+        </div>
+        <div class="foto">
+            <img src="pict2.jpg" width="520" height="280">
+            <h3>Foto 2</h3>
+        </div>
+    </div>
+    <br>
+    <script>
+        const scrollButton = document.getElementById("scrollButton")
+        const table1= document.getElementById("table1")
+        
+        function  toggleTable() {
+            if (table1.style.display === "none") {
+                table1.style.display = "table";
+            } else {
+                table1.style.display = "none"; 
+            }
+        }
+        scrollButton.addEventListener("click", toggleTable);
+        </script>
+</body>
+</html>
